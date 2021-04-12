@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react'
+import Button from './components/BaseButton'
+import Card from './components/BaseCard'
+import './App.css'
 
 function App() {
+
+  const [repositories, setRepositories] = useState([
+    { id: 1, name: 'repo-1'},
+    { id: 2, name: 'repo-2'},
+    { id: 3, name: 'repo-3'},
+  ])
+
+  function handleAddRepository(){
+    setRepositories([
+      ...repositories,
+      { id: Math.random(), name: "Novo repo" }
+    ])
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Card width={'50vw'}>
+        <h1>Welcome to codeleap</h1>
+        <label for="username">Please enter your username</label>
+        <input id="username"></input>
+        <Button primary handleClick={handleAddRepository}>Enter</Button>
+      </Card>
+    </>
   );
 }
 
