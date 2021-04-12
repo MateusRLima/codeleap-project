@@ -1,17 +1,17 @@
-import Button from '../../components/BaseButton'
+import React from 'react'
 import Card from '../../components/BaseCard'
-
+import './index.css'
 
 function Main() {
+
   return (
-    <div>
+    <>
       <Card>
-        <h1>Welcome to CodeLeap MainPage!</h1>
-        <label for="username">Please enter your username</label>
-        <input></input>
-        <Button>Enter</Button>
+        <div className="cardTitle">
+          <h1>CodeLeap Network</h1>
+        </div>
       </Card>
-    </div>
+    </>
   );
 }
 

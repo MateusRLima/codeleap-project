@@ -1,0 +1,24 @@
+.cardTitle {
+    display: flex;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.cardForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardForm label {
+    margin-bottom: 13px;
+}
+
+.cardForm input {
+    padding: 3px
+}
+
+.cardAction {
+    display: flex;
+    justify-content: flex-end;
+}

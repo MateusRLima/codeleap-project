@@ -7,12 +7,12 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Switch>
+      <BrowserRouter>
+        <Switch>
           <Route path="/" exact={true} component={Signup} />
           <Route path="/main" component={Main} />
-      </Switch>
-    </ BrowserRouter>
+        </Switch>
+      </ BrowserRouter>
   );
 }
 
