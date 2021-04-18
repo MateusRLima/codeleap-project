@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom';
 import styled from "styled-components";
 import Card from '../../components/BaseCard'
 import './Signup.css'
@@ -10,9 +11,10 @@ const CardUser = styled(Card)`
 function Signup() {
 
   const [name, setName] = useState('')
+  const history = useHistory()
 
   function handleInput(){
-    alert(`Submitting Name ${name}`)
+    history.push('/main')
   }
 
   return (

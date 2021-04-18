@@ -1,6 +1,6 @@
 import React from 'react'
 import Signup from './pages/SignupPage/Signup'
-import Main from './pages/MainPage'
+import Main from './pages/MainPage/Main'
 import './App.css'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
